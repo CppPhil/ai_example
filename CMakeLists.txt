@@ -15,6 +15,7 @@ set(OPTION_BUILD_SHARED_LIBS OFF CACHE BOOL "Disable shared libraries" FORCE)
 set(FLTK_BUILD_TEST OFF CACHE BOOL "Build FLTK tests" FORCE)
 set(FLTK_BUILD_EXAMPLES OFF CACHE BOOL "Build FLTK examples" FORCE)
 
+include_directories(${CMAKE_BINARY_DIR}/external/fltk)
 add_subdirectory(external/fltk)
 add_subdirectory(external/philslib)
 add_subdirectory(external/expected)
